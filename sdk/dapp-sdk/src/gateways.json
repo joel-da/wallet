@@ -1,6 +1,6 @@
 [
     {
-        "name": "Wallet Gateway (localhost, dev)",
+        "name": "Wallet Gateway",
         "rpcUrl": "http://localhost:3030/api/v0/dapp"
     }
 ]
