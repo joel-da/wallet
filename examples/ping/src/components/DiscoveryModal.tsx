@@ -373,6 +373,30 @@ export const DiscoveryModal: React.FC<DiscoveryModalProps> = ({
                                     ) : (
                                         <div className="connecting-loading">
                                             <div className="connecting-spinner-ring">
+                                                <svg
+                                                    className="connecting-ring-svg"
+                                                    viewBox="0 0 92 92"
+                                                    fill="none"
+                                                    aria-hidden="true"
+                                                >
+                                                    <rect
+                                                        className="connecting-ring-track"
+                                                        x="3"
+                                                        y="3"
+                                                        width="86"
+                                                        height="86"
+                                                        rx="20"
+                                                    />
+                                                    <rect
+                                                        className="connecting-ring-progress"
+                                                        x="3"
+                                                        y="3"
+                                                        width="86"
+                                                        height="86"
+                                                        rx="20"
+                                                        pathLength={100}
+                                                    />
+                                                </svg>
                                                 <span className="connecting-avatar">
                                                     {selectedEntryIcon ? (
                                                         <img
@@ -573,7 +597,12 @@ export const DiscoveryModal: React.FC<DiscoveryModalProps> = ({
                                         strokeWidth="1.8"
                                         strokeLinejoin="round"
                                     />
-                                    <circle cx="15" cy="13" r="1.1" fill="currentColor" />
+                                    <circle
+                                        cx="15"
+                                        cy="13"
+                                        r="1.1"
+                                        fill="currentColor"
+                                    />
                                 </svg>
                                 Need a wallet?
                             </a>
